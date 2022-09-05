@@ -1,0 +1,47 @@
+:root {
+    --main-color: #3456FF;
+    --text-color: #070928;
+    --main-background-color: #FFFFFF;
+    --sub-color: rgb(171, 170, 170);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, sans-serif;
+    background-color: #F8F8FA;
+    font-size: 65%;
+}
+.active-btn {
+    color: var(--main-color)!important;
+}
+.active-song {
+    background-color: var(--main-color)!important;
+}
+.active-song h2,
+.active-song h4,
+.active-song .song-items__option {
+    color: white!important;
+}
+iframe {
+    position: absolute;
+    top: 261px;
+    left: 313px;
+    opacity: 0.1;
+    width: 100px;
+    height: 100px;
+}
+@media screen and (max-width: 700px){
+    body .app {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .app .dashboard,
+    .app .song-list {
+        width: 70%;
+    }
+}
