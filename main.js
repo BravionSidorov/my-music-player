@@ -67,11 +67,13 @@ const player = {
                     <h2 class="song-name">${song.name}</h2>
                     <h4 class="song-single">${song.singer}</h4>
                 </div>
-                <div class="song-items__option">
-                    <i class="fas fa-ellipsis-h"></i>
-                </div>
             </div>
         `})
+
+        
+    //      <div class="song-items__option">
+    //          <i class="fas fa-ellipsis-h"></i>
+    //      </div>
 
         htmls.innerHTML = listSongText.join("");
     },

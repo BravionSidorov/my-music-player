@@ -4,27 +4,33 @@
     --main-background-color: #FFFFFF;
     --sub-color: rgb(171, 170, 170);
 }
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 html {
     font-family: Arial, sans-serif;
     background-color: #F8F8FA;
     font-size: 65%;
 }
+
 .active-btn {
-    color: var(--main-color)!important;
+    color: var(--main-color) !important;
 }
+
 .active-song {
-    background-color: var(--main-color)!important;
+    background-color: var(--main-color) !important;
 }
+
 .active-song h2,
 .active-song h4,
 .active-song .song-items__option {
-    color: white!important;
+    color: white !important;
 }
+
 iframe {
     position: absolute;
     top: 261px;
@@ -33,15 +39,57 @@ iframe {
     width: 100px;
     height: 100px;
 }
-@media screen and (max-width: 1050px){
+
+@media screen and (max-width: 1050px) {
     body .app {
         width: 100%;
         display: flex;
         justify-content: center;
         margin: 0;
     }
+
     .app .dashboard,
     .app .song-list {
-        width: 70%;
+        width: 80%;
+    }
+
+    .app .dashboard .CD-block {
+        width: 440px;
+        margin: 30px 0;
+    }
+
+    .app .dashboard .CD {
+        border-radius: 227px;
+    }
+
+    .app .dashboard .heading>h4 {
+        font-size: 3rem;
+    }
+
+    .app .dashboard .heading .current-song-name {
+        font-size: 4rem;
+    }
+
+    .app .dashboard .control {
+        font-size: 3rem;
+    }
+
+    .app .song-list {
+        padding-top: 760px;
+    }
+
+    .app .song-list .song-items {
+        padding: 16px 28px;
+    }
+
+    .app .song-list .song-items .song-items__image {
+        width: 60px;
+        height: 60px;
+    }
+    .app .song-list .song-items__info .song-name {
+        font-size: 2.6rem;
+    }
+    .app .song-list .song-items__info .song-single {
+        font-size: 2rem;
     }
 }
