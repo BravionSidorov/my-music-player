@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="app">
+        <!-----------Dashboard----------->
+        <div class="dashboard">
+            <!----Heading---->
+            <div class="heading">
+                <h4>Now playing:</h2>
+                    <h2 class="current-song-name">String 57h & 9th</h2>
+            </div>
+
+            <!----CD-block---->
+            <div class="CD-block">
+                <div class="CD">
+
+                </div>
+            </div>
+
+            <!----Control-block---->
+            <div class="control">
+                <div class="control-songs__btn repeat-btn">
+                    <!-- Hidden-class: 'active-btn' -->
+                    <i class="fas fa-redo"></i>
+                </div>
+                <div class="control__btn prev-btn">
+                    <i class="fas fa-step-backward"></i>
+                </div>
+                <!-- Hidden-class: 'playing' -->
+                <div class="control__btn toggle-play-btn">
+                    <i id="pause-icon" class="fas fa-pause"></i>
+                    <i id="play-icon" class="fas fa-play"></i>
+                </div>
+                <div class="control__btn next-btn">
+                    <i class="fas fa-step-forward"></i>
+                </div>
+                <div class="control-songs__btn random-btn">
+                    <!-- Hidden-class: 'active-btn' -->
+                    <i class="fas fa-random"></i>
+                </div>
+            </div>
+            <!----Song-progress---->
+            <input class="song-progress" type="range" step="0.46" min="0" max="100" value="0">
+            <audio src=""></audio>
+        </div>
+        <!-----------Song-list----------->
+        <div class="song-list">
+            <div href="" class="song-items" data-index="">
+                <!-- <div class="song-items__image"></div> -->
+                <div class="song-items__info" index="">
+                    <img class="song-items__image" src="" alt="">
+                    <h2 class="song-name"></h2>
+                    <h4 class="song-single"></h4>
+                </div>
+                <div class="song-items__option">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
