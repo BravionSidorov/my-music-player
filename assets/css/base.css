@@ -63,19 +63,28 @@ iframe {
     }
 
     .app .dashboard .heading>h4 {
-        font-size: 3rem;
+        font-size: 2.6rem;
     }
 
     .app .dashboard .heading .current-song-name {
-        font-size: 4rem;
+        font-size: 3.7rem;
     }
 
     .app .dashboard .control {
         font-size: 3rem;
     }
 
+    .app .dashboard .control .toggle-play-btn>i {
+        padding: 30px;
+        border-radius: 45px;
+    }
+
+    .app .dashboard .song-progress {
+        height: 10px;
+    }
+
     .app .song-list {
-        padding-top: 760px;
+        padding-top: 800px;
     }
 
     .app .song-list .song-items {
