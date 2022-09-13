@@ -37,6 +37,18 @@ const player = {
             image: "https://i.ytimg.com/vi/wNf20kRfGVI/maxresdefault.jpg"
         },
         {
+            name: "Remember Our Summer",
+            singer: "Frogmonster",
+            path: "./assets/audio/remember_our_summer.mp3",
+            image: "https://i1.sndcdn.com/artworks-x2IYapSK8vTh-0-t500x500.jpg"
+        },
+        {
+            name: "Zoverze Lovely",
+            singer: "FURY EDM",
+            path: "./assets/audio/zoverze_lovely.mp3",
+            image: "https://i.ytimg.com/vi/Cz-FNP7S8Ws/maxresdefault.jpg"
+        },
+        {
             name: "Is there still anything that love can do",
             singer: "Raftaar x Nawazuddin Siddiqui",
             path: "./assets/audio/is_there_still_anything_that_love_can_do.mp3",
